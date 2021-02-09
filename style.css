@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Roboto&display=swap');
+
+body {
+    background-image: url(/Img/cool-background.png);
+    margin: 0 5rem;
+}
+
+#nav-container {
+    background-color: rgba(199, 212, 247, .3);
+}
+
+#nav {
+    list-style-type: none;
+    margin: 1rem;
+    padding: 0;
+}
+
+#nav h1, li {
+    display: inline;
+}
+
+#nav li {
+    float: right;
+    
+}
+
+
+
+/* Image and text  properties */
+
+.portfolio-container img {
+    border: 2px solid rgb(189, 201, 224);
+    padding: 5px;
+}
+
+header {
+    font-family: 'Roboto', sans-serif;
+}
+
+#nav h1 {
+    font-family: 'Fredoka One', cursive;
+}
+
+main {
+    font-family: 'Roboto', sans-serif;
+}
+
+footer {
+    font-family: 'Roboto', sans-serif;
+}
