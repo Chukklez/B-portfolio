@@ -43,17 +43,19 @@ body {
     color: black;  
 }
 
-.about-container {
+#about {
     display: grid;
-    justify-content: center;
-    align-items: center;
+    justify-self: left;
     padding: 1em;
     background-color: rgba(199, 212, 247, .3);
     padding-bottom: 1em;
     border-radius: 15px 15px;
     width: 40rem;
-    }
+}
 
+#about a {
+    transition-duration: .3s;
+}
 
 
 
@@ -67,6 +69,10 @@ body {
 }
 
 header {
+    font-family: 'Roboto', sans-serif;
+}
+
+main {
     font-family: 'Roboto', sans-serif;
 }
 
@@ -84,8 +90,19 @@ header {
     color: black;
 }
 
-main {
-    font-family: 'Roboto', sans-serif;
+#about a {
+    color: black;
+    text-decoration: underline;
+}
+
+#about a:hover {
+    transition-duration: .3s;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+#about a:visited {
+    color: black;
 }
 
 footer {
