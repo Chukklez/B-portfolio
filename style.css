@@ -75,11 +75,11 @@ body {
     display: grid;
     margin: 1rem;
     padding: .5rem;
-    grid-template-columns: 33% 33% 33% ;
+    grid-template-columns: repeat(3, 1fr);
     grid-template-rows: auto;
     grid-template-areas:
     "img img img"
-    "img-txt img-txt img-txt"  
+    "img-txt1 img-txt2 img-txt3"  
 }
 
 .img {
@@ -104,13 +104,107 @@ footer {
     display: flex;
     justify-content: flex-end;
     align-items: center;
+    width: 100%;
 }
 
 .copy {
     display: flex;
     justify-content: flex-start;
+    width: 50%;
 }
 
+.logos {
+    display: flex;
+    justify-content: flex-end;
+    border: 1em;
+    width: 50%;
+}
+
+
+/* media queries  */
+
+@media screen and (max-width:1190px) {
+    #portfolio {
+        display: grid;
+        justify-self: center;
+        margin: 5rem;
+        background-color: rgba(199, 212, 247, .3);
+        padding-bottom: 1em;
+        border-radius: 15px 15px;
+        margin-bottom: 5rem;
+    }
+    .portfolio-container {
+        display: grid;
+        margin: 1rem;
+        padding: .5rem;
+        grid-template-columns: 1fr;
+        grid-template-areas:
+        "img1"
+        "txt1"
+        "img2"
+        "txt2"
+        "img3"
+        "txt3";
+    }    
+
+    .project1 {
+        grid-area: img1;
+    }
+    .project2 {
+        grid-area: img2;
+    }
+    .project3 {
+        grid-area: img3;
+    }
+    .img-txt1 {
+        grid-area: txt1;
+    }
+    .img-txt2 {
+        grid-area: txt2;
+    }
+    .img-txt3 {
+        grid-area: txt3;
+    }
+}
+
+@media screen and (max-width: 670px) {
+    #nav-container {
+        margin: 0;
+        background-color: rgba(199, 212, 247, .3);
+        padding-bottom: 1em;
+        border-radius: 15px 15px;
+        margin-bottom: 5rem;
+    }
+
+    #about {
+        display: grid;
+        justify-self: center;
+        padding: 1em;
+        background-color: rgba(199, 212, 247, .3);
+        padding-bottom: 1em;
+        border-radius: 15px 15px;
+        width: auto;
+    }
+
+    #lang {
+        margin: 0;
+        background-color: rgba(199, 212, 247, .3);
+        padding-bottom: 1em;
+        border-radius: 15px 15px;
+        margin-bottom: 5rem;
+    }
+    
+
+    .logo1 {
+        width: 100px;
+    }
+
+    .logo2 {
+        width: 100px;
+    }
+}
+
+/* @media screen and (max-width: 375px */
 
 
 /* Image and text  properties */
@@ -160,8 +254,16 @@ main {
 }
 
 .img:hover {
-    transform: scale(1.15)
+    transform: scale(1.15);
     
+}
+
+.gitlogo:hover {
+    transform: scale(1.15);
+}
+
+.linklogo:hover {
+    transform: scale(1.15);
 }
 
 #portfolio h1 {
