@@ -5,9 +5,13 @@ body {
     margin: 0 5rem;
 }
 
+/* NAV BAR */
+
 #nav-container {
     background-color: rgba(199, 212, 247, .3);
     padding-bottom: 1em;
+    border-radius: 15px 15px;
+    margin-bottom: 5rem;
 }
 
 #nav {
@@ -28,6 +32,17 @@ body {
     color: black;  
 }
 
+.about-container {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    padding: 1em;
+    background-color: rgba(199, 212, 247, .3);
+    padding-bottom: 1em;
+    border-radius: 15px 15px;
+    width: 40rem;
+    }
+
 
 
 
@@ -35,6 +50,7 @@ body {
 /* Image and text  properties */
 
 .portfolio-container img {
+    border-radius: 10px;
     border: 2px solid rgb(189, 201, 224);
     padding: 5px;
 }
