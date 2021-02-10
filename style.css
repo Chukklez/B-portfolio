@@ -7,6 +7,7 @@ body {
 
 #nav-container {
     background-color: rgba(199, 212, 247, .3);
+    padding-bottom: 1em;
 }
 
 #nav {
@@ -17,12 +18,17 @@ body {
 
 #nav h1, li {
     display: inline;
+    padding-top: .5em;
 }
 
 #nav li {
     float: right;
-    
+    padding-left: 1em;
+    transition-duration: .3s;  
+    color: black;  
 }
+
+
 
 
 
@@ -39,6 +45,16 @@ header {
 
 #nav h1 {
     font-family: 'Fredoka One', cursive;
+}
+
+#nav li:hover {
+    transition-duration: .3s;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+#nav li:visited {
+    color: black;
 }
 
 main {
