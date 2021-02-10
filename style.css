@@ -43,6 +43,8 @@ body {
     color: black;  
 }
 
+/* About container in main */
+
 #about {
     display: grid;
     justify-self: left;
@@ -55,6 +57,26 @@ body {
 
 #about a {
     transition-duration: .3s;
+}
+
+/* Portfolio container in main */
+
+#portfolio {
+    display: grid;
+    justify-self: right;
+    margin: 5rem;
+    background-color: rgba(199, 212, 247, .3);
+    padding-bottom: 1em;
+    border-radius: 15px 15px;
+    margin-bottom: 5rem;
+}
+
+.portfolio-container {
+    margin: 1rem;
+}
+
+.portfolio-container h1 {
+    margin: .5rem;
 }
 
 
