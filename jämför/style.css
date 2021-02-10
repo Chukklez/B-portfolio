@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+body {
+    margin: auto;
+    font-family: Roboto, sans-serif
+}
+
+.container {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+
+
+/* The Header Container*/
+#bg-img {
+    width: 100%;
+}
+
+
+/* The text and links within the container */
+.top-left {
+    position: absolute;
+    top: 2rem;
+    left: 20rem;
+}
+
+.nav-ul {
+    position: absolute;
+    top: 1rem;
+    right: 20rem;
+}
+
+.navlist {
+    display: flex;
+    float: left;
+    padding: 1rem;
+    font-weight: normal;
+    transition-duration: 0.3s;
+}
+
+.center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.center h1 {
+    font-size: 5rem;
+}
+
+.btn {
+    background-color: #00d5a6;
+    border: none;
+    padding: 15px 32px;
+    text-align: center;
+    transition-duration: 0.3s;
+}
+
+
+/* The Main body with articles and images */
+main {
+    position: relative;
+    margin-top: 0;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.grid-container {
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    display: grid;
+    grid-template-columns: 15% 35% 35% 15%;
+    grid-template-rows: auto;
+    grid-template-areas:
+    "left-side left-center right-center right-side"
+    "left-side left-center right-center right-side"
+    "left-side left-center big-image big-image";
+}
+
+.computer {
+    width: 100%;
+}
+
+.pad {
+    width: 100%;
+}
+
+.chart {
+    width: 10%;
+    border-radius: 10%;
+}
+
+.solid {
+    border: solid 1px #eee;
+}
+
+/* Coloring the links withing the container to white for visibility and adding animation */
+a:link {
+    color: white;
+    text-decoration: none;
+}
+a:visited {
+    text-decoration: none;
+    color: white;
+}
+
+.btn:hover {
+    padding: 20px 32px;
+    font-size: 17px;
+    transition-duration: 0.3s;
+}
+
+.navlist:hover {
+    font-size: 17px;
+    font-weight: bold;
+    transition-duration: 0.3s;
+}
+
+a.cta  {
+    color: red;
+}
+
+
